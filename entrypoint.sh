@@ -2,4 +2,6 @@
 
 set -e
 
-/etc/init.d/mysql start
+service mysql start
+
+exec "$@"
